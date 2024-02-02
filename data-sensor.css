@@ -1,0 +1,78 @@
+/* data-sensor.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.details {
+    width: 80%;
+    position: fixed;
+    top: 50%; /* Đưa phần trên của .details về giữa màn hình */
+    left: 50%; /* Đưa phần trái của .details về giữa màn hình */
+    transform: translate(-50%, -50%); /* Dịch chuyển .details đi theo nửa chiều rộng và cao của nó */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+thead {
+    background-color: #ff7676;
+}
+
+thead tr {
+    border-bottom: 2px solid #e82626;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f77c7c;
+}
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 20px;
+}
+
+.cardHeader h2 {
+    font-size: 24px;
+    color: #1848f5;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.search i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
